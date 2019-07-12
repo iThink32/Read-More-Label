@@ -25,7 +25,7 @@ public final class ReadMoreLabel:UILabel {
     }
 
     
-    public func addTrailingText(trailingText:String = "...",textToAppend:String,fontOfTextToAppend:UIFont,colorOfTextToAppend:PaytmMoneyColors) {
+    public func addTrailingText(trailingText:String = "...",textToAppend:String,fontOfTextToAppend:UIFont,colorOfTextToAppend:UIColor) {
         let readMoreText = trailingText + textToAppend
         // dont do anything if its frame is not set
         guard self.frame.isEmpty == false else{
@@ -43,7 +43,7 @@ public final class ReadMoreLabel:UILabel {
         range = startIndex..<endIndex
         let strTrimmedWithReadMode = strTrimmedWithoutReadMore.replacingCharacters(in: range, with: "") + "..."
         let answerAttributed = NSMutableAttributedString(string: strTrimmedWithReadMode, attributes: [NSAttributedString.Key.font: self.font])
-        let readMoreAttributed = NSMutableAttributedString(string: textToAppend, attributes: [NSAttributedString.Key.font: fontOfTextToAppend, NSAttributedString.Key.foregroundColor: colorOfTextToAppend.uiColor])
+        let readMoreAttributed = NSMutableAttributedString(string: textToAppend, attributes: [NSAttributedString.Key.font: fontOfTextToAppend, NSAttributedString.Key.foregroundColor: colorOfTextToAppend])
         answerAttributed.append(readMoreAttributed)
         self.attributedText = answerAttributed
         // add tap gesture
