@@ -3,7 +3,7 @@ A label that you use to add a trailing text based on the number of lines you spe
 
 ## Image :
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/iThink32/Read-More-Label/blob/master/ReadMore.png)
 
 ## Why do you need this?
 
