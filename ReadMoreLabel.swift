@@ -1,9 +1,7 @@
 //
 //  ReadMoreLabel.swift
-//  PaytmMoneyUIKit
 //
 //  Created by Shashank on 07/07/19.
-//  Copyright © 2019 Paytm Money. All rights reserved.
 //
 
 import Foundation
