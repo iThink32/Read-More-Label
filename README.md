@@ -1,6 +1,10 @@
 # Read-More-Label
 A label that you use to add a trailing text based on the number of lines you specify
 
+## Image :
+
+![alt text](http://url/to/img.png)
+
 ## Why do you need this?
 
 This repo is based on a solution found online but it doesnt handle one scenario i.e number of lines , it is totally dependent on the frame of the label.This repo handles that problem and adds a trailing text based on the number of lines you specify.
@@ -16,7 +20,7 @@ self.lblDescription.layoutIfNeeded()
 self.lblDescription.addTrailingText(textToAppend: "Read More", fontOfTextToAppend: UIFont, colorOfTextToAppend: UIColor))
 ```
  
- here view.layoutIfNeeded() is reqired to give the label the correct width before i begin the internal manipulation of strings
+ here lblDescription.layoutIfNeeded() is reqired to give the label the correct width before i begin the internal manipulation of strings
  followed by the font and color of the text required.
 
 ### Note:
