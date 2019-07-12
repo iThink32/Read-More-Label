@@ -10,11 +10,11 @@ public protocol ReadMoreLabelDelegate:class {
     func trailingTextTapped()
 }
 
-public final class ReadMoreLabel:PMLabel {
+public final class ReadMoreLabel:UILabel {
     
-    public init(style: LabelStyleable,delegate:ReadMoreLabelDelegate?) {
+    public init(delegate:ReadMoreLabelDelegate?) {
         self.delegate = delegate
-        super.init(style: style)
+        super.init(frame: CGRect.zero)
     }
     
     public weak var delegate:ReadMoreLabelDelegate?
