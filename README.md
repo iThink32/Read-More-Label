@@ -7,7 +7,7 @@ A label that you use to add a trailing text based on the number of lines you spe
 
 ## Why do you need this?
 
-This repo is based on a solution found online but it doesnt handle two scenarios i.e number of lines and a tap action , it is totally dependent on the frame of the label.This repo handles both problems , adds a trailing text based on the number of lines you specify and also provides a delegate method to handle the tap.Moreover the solution used online involves a lot of down casting to NSString and using its funcs.This repo uses a pure swift apprach in most cases possible to solve the problem.
+This repo is based on a solution found online which doesnt handle two scenarios i.e number of lines and a tap action , it is totally dependent on the frame of the label.This repo handles both problems , adds a trailing text based on the number of lines you specify and also provides a delegate method to handle the tap.Moreover the solution used online involves a lot of down casting to NSString and using its funcs.This repo uses a pure swift apprach in most cases possible to solve the problem.
 
 ## Usage:
 
