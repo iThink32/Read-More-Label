@@ -20,7 +20,7 @@ self.lblDescription.layoutIfNeeded()
 self.lblDescription.addTrailingText(textToAppend: "Read More", fontOfTextToAppend: UIFont, colorOfTextToAppend: UIColor))
 ```
  
- here lblDescription.layoutIfNeeded() is reqired to give the label the correct width before i begin the internal manipulation of strings
+ here lblDescription.layoutIfNeeded() is required to give the label the correct width before i begin the internal manipulation of strings
  followed by the font and color of the text required.
 
 ### Note:
