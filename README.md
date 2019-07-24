@@ -27,3 +27,6 @@ self.lblDescription.addTrailingText(textToAppend: "Read More", fontOfTextToAppen
 
 This concept uses a lot of apple's api's which are not widely used , research well before you modify.Simple to use but complex to understand and implement.
 
+## Note:
+I continuously improve this repo , so pls check commit history and update your repo if i have committed stuff.
+
