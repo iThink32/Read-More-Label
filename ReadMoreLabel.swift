@@ -32,6 +32,10 @@ public final class ReadMoreLabel:PMLabel {
         self.isUserInteractionEnabled = false
     }
     
+    //    public func setDelegate(_ delegate: ReadMoreLabelDelegate) {
+    //        self.delegate = delegate
+    //    }
+    
     public weak var delegate:ReadMoreLabelDelegate?
     
     
@@ -49,7 +53,7 @@ public final class ReadMoreLabel:PMLabel {
         self.originalText = self.text
         let errorPadding = 2
         // first get the string that can be displayed in the required number of lines
-        guard self.numberOfLines != 0, let lengthForVisibleString = self.visibleTextLength(),let unwrappedText = self.text,unwrappedText.count > (readMoreText.count + errorPadding) else{
+        guard self.numberOfLines != 0, let lengthForVisibleString = self.visibleTextLength()  ,let unwrappedText = self.text ,(lengthForVisibleString < unwrappedText.count), (lengthForVisibleString < unwrappedText.count) , unwrappedText.count > (readMoreText.count + errorPadding) else{
             return
         }
         var startIndex = unwrappedText.index(unwrappedText.startIndex, offsetBy: lengthForVisibleString)
