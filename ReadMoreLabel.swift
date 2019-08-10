@@ -1,6 +1,5 @@
 //
 //  ReadMoreLabel.swift
-//  PaytmMoneyUIKit
 //
 //  Created by Shashank on 07/07/19.
 //
@@ -38,7 +37,7 @@ public final class ReadMoreLabel:PMLabel {
         fatalError()
     }
     
-    public func addTrailingText(trailingText:String = "...",textToAppend:String,fontOfTextToAppend:PaytmMoneyFont,colorOfTextToAppend:PaytmMoneyColors) {
+    public func addTrailingText(trailingText:String = "...",textToAppend:String,fontOfTextToAppend:UIFont,colorOfTextToAppend:UIColor) {
         let readMoreText = trailingText + textToAppend
         // dont do anything if its frame is not set
         guard self.frame != CGRect.zero, self.text?.isEmpty == false else{
@@ -62,7 +61,7 @@ public final class ReadMoreLabel:PMLabel {
         let strTrimmedWithReadMode = strTrimmedWithoutReadMore.replacingCharacters(in: range, with: "") + "..."
         let answerAttributed = NSMutableAttributedString(string: strTrimmedWithReadMode, attributes: [NSAttributedString.Key.font: self.font])
         // add read more attribtuted string
-        let readMoreAttributed = NSMutableAttributedString(string: textToAppend, attributes: [NSAttributedString.Key.font: fontOfTextToAppend.uiFont, NSAttributedString.Key.foregroundColor: colorOfTextToAppend.uiColor])
+        let readMoreAttributed = NSMutableAttributedString(string: textToAppend, attributes: [NSAttributedString.Key.font: fontOfTextToAppend, NSAttributedString.Key.foregroundColor: colorOfTextToAppend])
         answerAttributed.append(readMoreAttributed)
         self.attributedText = answerAttributed
         self.isUserInteractionEnabled = true
