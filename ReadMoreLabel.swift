@@ -3,7 +3,6 @@
 //  PaytmMoneyUIKit
 //
 //  Created by Shashank on 07/07/19.
-//  Copyright © 2019 Paytm Money. All rights reserved.
 //
 
 import Foundation
@@ -32,10 +31,6 @@ public final class ReadMoreLabel:PMLabel {
         self.isUserInteractionEnabled = false
     }
     
-    //    public func setDelegate(_ delegate: ReadMoreLabelDelegate) {
-    //        self.delegate = delegate
-    //    }
-    
     public weak var delegate:ReadMoreLabelDelegate?
     
     
@@ -46,7 +41,7 @@ public final class ReadMoreLabel:PMLabel {
     public func addTrailingText(trailingText:String = "...",textToAppend:String,fontOfTextToAppend:PaytmMoneyFont,colorOfTextToAppend:PaytmMoneyColors) {
         let readMoreText = trailingText + textToAppend
         // dont do anything if its frame is not set
-        guard self.frame.isEmpty == false, self.text?.isEmpty == false else{
+        guard self.frame != CGRect.zero, self.text?.isEmpty == false else{
             return
         }
         self.trailingText = textToAppend
